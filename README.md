@@ -4,7 +4,7 @@
 ---
 
 ## Description:
-##### Simple weather app that uses Dark Sky's API. User is able to pick destinations or have the browser automatically find their locations onload. The background picture and data icon change to the current weather and time of day. User can view weather data in standard or metric values.  
+##### Simple weather app that uses Dark Sky's API. User's location is automatically found on init through the browser. The background picture and weather data icon change to the current weather and time of day. User can view weather data in standard or metric values.  
 
 <img src="./public/assets/images/desktop-one.png" width="50%">
 
@@ -26,7 +26,7 @@
 
 ---
 
-#### App can be viewed at: https://wrap-designer.herokuapp.com/
+#### App can be viewed at: https://darksky-weather.herokuapp.com/
 
 ---
 
