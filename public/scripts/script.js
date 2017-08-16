@@ -16,13 +16,13 @@ $(document).ready(function() {
         dataType: "jsonp",
         success: function(response) {
           console.log(response);
-          $('.location').html('Minneapolis/Saint Paul');
-          console.log(response.timezone);
+          $('.location').html(response.timezone);
           //check postman to see if these are correctly referenced
           $('.humidity').html(((Math.round(response.currently.humidity)) * 10) + '%');
           $('.windspeed').html((response.currently.windSpeed) + ' mph');
           $('.temp').html(Math.round(response.currently.temperature) + ' °F');
-          console.log(response.currently.temperature);
+          $('.current-summary').html(response.currently.summary)
+          console.log(response.currently);
 
           if (response.currently.icon === "clear-day") {
             $('.icon').html('<img src="https://png.icons8.com/clouds/Dusk_Wired/64">');
